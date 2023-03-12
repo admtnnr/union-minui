@@ -1,7 +1,7 @@
 # this logic was broken out from picoarch's all-in-one makefile
 
 CORES = fceumm gambatte gpsp pcsx_rearmed picodrive snes9x2005_plus
-CORES+= beetle-pce-fast beetle-vb fake-08 mednafen_supafaust mgba pokemini # extras
+CORES+= beetle-pce-fast beetle-vb fake-08 mednafen_supafaust mgba pokemini mame2003-plus # extras
 
 ###############################
 
@@ -39,6 +39,9 @@ pokemini_MAKEFILE = Makefile.libretro
 
 snes9x2005_plus_REPO = https://github.com/libretro/snes9x2005
 snes9x2005_plus_FLAGS = USE_BLARGG_APU=1
+
+mame2003-plus_REPO = https://github.com/libretro/mame2003-plus-libretro
+mame2003-plus_CORE = mame2003_plus_libretro.so
 
 ###############################
 
